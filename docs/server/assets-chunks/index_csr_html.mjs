@@ -15,6 +15,6 @@ export default `<!doctype html>
     <app-root></app-root>
     <!-- Optional: Bootstrap JS bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="polyfills-5CFQRCPP.js" type="module"></script><script src="main-PKORPO3A.js" type="module"></script></body>
+  <script src="polyfills-5CFQRCPP.js" type="module"></script><script src="main-YFQSN6PY.js" type="module"></script></body>
 </html>
 `;
