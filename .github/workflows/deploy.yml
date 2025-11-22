@@ -1,0 +1,35 @@
+name: Deploy Angular to docs/
+
+on:
+  push:
+    branches:
+      - main
+permissions:
+  contents: write # REQUIRED for committing/pushing
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Angular app
+        run: npm run build:prod
+
+      - name: Commit docs folder
+        run: |
+          git config user.name "Ghislain1"
+          git config user.email "ghislain1@outlook.de"
+          git add docs
+          git commit -m "Update docs build" || echo "No changes to commit"
+          git push
