@@ -10,7 +10,7 @@
     "format:check": "prettier --check .",
     "format": "prettier --write .",
     "postbuild": "rm -rf docs-temp && mv docs/browser docs-temp && rm -rf docs && mv docs-temp docs",
-    "build:prod": "rm -rf docs &&  ng build --configuration production --base-href https://ghislain1.github.io/tetris/ --verbose true && npm run postbuild",
+    "build:prod": "rm -rf docs &&  ng build --configuration production --base-href ./ --verbose true && npm run postbuild",
     "serve:ssr:tetris": "node docs/tetris/server/server.mjs"
   },
   "prettier": {
