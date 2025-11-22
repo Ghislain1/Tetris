@@ -1,2 +1,0 @@
-export default `.tetris-grid{display:inline-block;height:100%;padding:8px}.tetris-row{display:flex}.tetris-cell{width:24px;height:24px;border:1px solid #333}
-`;
