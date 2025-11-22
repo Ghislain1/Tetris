@@ -1,5 +1,8 @@
 # Tetris
 
+- [LIVE](https://ghislain1.github.io/tetris/)
+- Angular 20+
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.9.
 
 ## Development server
