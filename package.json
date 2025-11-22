@@ -9,8 +9,8 @@
     "test": "ng test",
     "format:check": "prettier --check .",
     "format": "prettier --write .",
-    "build:prod": "rm -rf docs && ng build --configuration production --base-href https://ghislain1.github.io/tetris/ --verbose true",
-    "serve:ssr:tetris": "node dist/tetris/server/server.mjs"
+    "build:prod": "rm -rf docs &&  ng build --configuration production --base-href https://ghislain1.github.io/tetris/ --verbose true",
+    "serve:ssr:tetris": "node docs/tetris/server/server.mjs"
   },
   "prettier": {
     "printWidth": 100,
