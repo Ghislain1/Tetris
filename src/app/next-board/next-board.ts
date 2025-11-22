@@ -43,31 +43,4 @@ export class NextBoard {
 
     return this.engine.checkColor(rowIndex, colIndex);
   }
-
-  // Keyboard controls
-  @HostListener('window:keydown', ['$event'])
-  keyEvent(event: KeyboardEvent) {
-    if (this.engine.state?.isGameOver && event.key !== 'p') {
-      return;
-    }
-    switch (event.key) {
-      case 'ArrowLeft':
-        this.engine.move('left');
-        break;
-      case 'ArrowRight':
-        this.engine.move('right');
-        break;
-      case 'ArrowDown':
-        break; // soft drop
-      case ' ':
-        this.engine.hardDrop();
-        break; // space - hard drop
-      case 'ArrowUp':
-        this.engine.rotate();
-        break;
-      case 'p':
-        this.engine.pause();
-        break;
-    }
-  }
 }

@@ -58,7 +58,6 @@ export class GameEngine {
     if (direction === 'left') {
       this.state!.currentPiece!.xCoord--;
     }
-
   }
 
   lockPiece() {
@@ -111,7 +110,7 @@ export class GameEngine {
   rotate() {
     console.log('Piece rotated');
   }
-  hardDrop() { }
+  hardDrop() {}
 
   stop() {
     console.log('STOP');

@@ -13,9 +13,7 @@ import { IPiece } from '../../core/interfaces/IPiece';
 })
 export class GameBoard implements OnInit {
   // Fields
-  private lastFrame: number = 0;
-  private dropInterval: number = 10 * 700; // dropInterval = 700; // ms
-  private intervalId: any;
+
   private engine: GameEngine;
 
   // Properties
