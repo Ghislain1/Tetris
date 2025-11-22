@@ -1,0 +1,12 @@
+<div class="tetris-grid">
+    @for (r of matrix$(); track $index; let rowIndex = $index) {
+    <div class="tetris-row">
+        @for (c of r; track $index; let colIndex = $index) {
+        <div class="tetris-cell" [style.background-color]="
+            canPaintCell(rowIndex, colIndex) ? piece?.color || 'transparent' : 'transparent'
+          "></div>
+        }
+    </div>
+    }
+    {{piece?.xCoord}}
+</div>
